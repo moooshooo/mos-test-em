@@ -20,13 +20,12 @@ const projects = [
 function Projects() {
   return (
     <section id="projects" className="relative py-32 px-6 bg-[#faf9f6] overflow-hidden">
-      {/* Bakgrunds-gradient som matchar CSS-originalet */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[radial-gradient(circle_at_top_right,rgba(200,180,150,0.25),transparent_70%)]" />
       </div>
 
       <div className="relative max-w-[1100px] mx-auto">
-        {/* Header */}
+
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -41,7 +40,7 @@ function Projects() {
           </p>
         </motion.div>
 
-        {/* Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <motion.div
@@ -53,10 +52,9 @@ function Projects() {
               whileHover={{ y: -10 }}
               className="group relative"
             >
-              {/* Kortet */}
+             
               <div className="relative h-full p-10 rounded-[2rem] bg-white/70 backdrop-blur-xl border border-[rgba(200,180,150,0.4)] shadow-[0_18px_50px_rgba(120,100,70,0.12)] group-hover:shadow-[0_30px_70px_rgba(120,100,70,0.22)] transition-all duration-500 overflow-hidden">
                 
-                {/* Dekorativ cirkel i bakgrunden vid hover */}
                 <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[rgba(200,180,150,0.1)] rounded-full blur-3xl group-hover:bg-[rgba(200,180,150,0.2)] transition-colors duration-500" />
 
                 <h3 className="text-2xl font-bold text-[#3f3a32] mb-4 tracking-tight">
@@ -67,7 +65,6 @@ function Projects() {
                   {project.description}
                 </p>
 
-                {/* Tech Tags */}
                 <ul className="flex flex-wrap gap-2 mb-10">
                   {project.tech.map((tech) => (
                     <li 
@@ -79,7 +76,6 @@ function Projects() {
                   ))}
                 </ul>
 
-                {/* GitHub Länk med animerad linje */}
                 <a
                   href={project.github}
                   target="_blank"
@@ -88,12 +84,10 @@ function Projects() {
                 >
                   <span>View on GitHub</span>
                   <span className="text-lg transition-transform duration-300 group-hover/link:translate-x-1">→</span>
-                  
-                  {/* Den snygga linjen som växer fram */}
+              
                   <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#9c8b6a] transition-all duration-300 group-hover/link:w-full" />
                 </a>
 
-                {/* Shine-effekten i botten (samma som i AboutMe) */}
                 <div className="absolute bottom-0 left-0 w-full h-1 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute inset-0 w-full bg-[#f1a5a5]">
                     <div 

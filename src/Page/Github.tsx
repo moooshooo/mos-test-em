@@ -1,4 +1,4 @@
-import arrows from "../assets/arrows.png"
+import arrows from "../assets/arrows.port.webp"
 
 
 function Github() {
@@ -29,7 +29,7 @@ function Github() {
       
 
       <a
-        href="https://github.com/DIN-GITHUB-HÄR"
+        href="https://github.com/Emilia-vip"
         target="_blank"
         rel="noopener noreferrer"
         className="

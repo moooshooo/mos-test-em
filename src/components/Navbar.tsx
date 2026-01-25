@@ -26,7 +26,7 @@ function Navbar() {
       <nav className="max-w-[1100px] mx-auto px-8 py-6 flex items-center justify-between">
         <div className="text-[12px] font-semibold tracking-[0.35em] uppercase">
           Emilia Eriksson
-          {/* HÄR ÄR ÄNDRINGEN: Från animate-pulse till animate-cursor */}
+         
           <span className="ml-1 text-[#9c8b6a] animate-cursor font-bold">_</span>
         </div>
 
